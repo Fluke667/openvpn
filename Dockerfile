@@ -4,7 +4,7 @@ ARG TZ='Europe/Berlin'
 ENV TZ ${TZ}
 ENV OPENVPN_HOME /etc/openvpn
 
-RUN apk add --no-cache openvpn bash easy-rsa openvpn-auth-pam openssl
+RUN apk add --no-cache openvpn bash easy-rsa openvpn-auth-pam openssl iptables
 
 
 
