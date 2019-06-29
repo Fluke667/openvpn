@@ -3,7 +3,7 @@ MAINTAINER Fluke667 <Fluke667@gmail.com>
 ARG TZ='Europe/Berlin'    
 ENV TZ ${TZ}
 
-RUN apk add --no-cache openvpn bash
+RUN apk add --no-cache openvpn bash easy-rsa openvpn-auth-pam openssl
 COPY data/entrypoint /entrypoint
 RUN chmod 755 /entrypoint
 
